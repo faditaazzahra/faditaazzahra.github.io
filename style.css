@@ -1,0 +1,28 @@
+h1 {
+	color: navy;
+	font-family: sans-serif;
+	text-decoration: underline;
+}
+body {
+	background-color: oldlace;
+	font-family: cursive;
+	color: navy;
+}
+
+table {
+	border: 2px;
+	border-color: lightskyblue;
+	background-color: navy;
+	color: oldlace;
+	text-align: center;
+	width: 50%;
+	max-width: 500px;
+	padding: 3px;
+}
+
+button{
+	color: oldlace;
+	background-color: navy;
+	border-color: lightskyblue;
+	font-family: serif;
+}
