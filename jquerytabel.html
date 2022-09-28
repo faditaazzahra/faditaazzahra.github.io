@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<title>TOP 5 Teman di STMIK IKMI CIREBON</title>
+	<style type="text/css">
+		@import url(stylebypadit.css);
+	</style>
+</head>
+
+<body>
+	<center>
+
+	<h1>TOP 5 TEMAN TERBAIK DI STMIK IKMI CIREBON</h1>
+
+	<table border="7" class="tabelteman">
+		<tbody>
+			<tr>
+				<th>Nomor</th>
+				<th>Nama Teman</th>
+				<th>Alamat</th>
+				<th>Aksi</th>
+			</tr>
+
+			<tr id="deret__1">
+				<td class="urutan">1</td>
+				<td class="namabestie">Nursuviyani Jannah</td>
+				<td class="domisili">Indramayu</td>
+				<td class="aksihapus" id="buang__1">Hapus</td>
+			</tr>
+
+			<tr id="deret__2">
+				<td class="urutan">2</td>
+				<td class="namabestie">Ainun Putri Nurhaliva</td>
+				<td class="domisili">Kabupaten Cirebon</td>
+				<td class="aksihapus" id="buang__2">Hapus</td>
+			</tr>
+
+			<tr id="deret__3">
+				<td class="urutan">3</td>
+				<td class="namabestie">Herlyta Qotrun Nada</td>
+				<td class="domisili">Kabupaten Cirebon</td>
+				<td class="aksihapus" id="buang__3">Hapus</td>
+			</tr>
+
+			<tr id="deret__4">
+				<td class="urutan">4</td>
+				<td class="namabestie">Maria Adelina Bui</td>
+				<td class="domisili">NTT</td>
+				<td class="aksihapus" id="buang__4">Hapus</td>
+			</tr>
+
+			<tr id="deret__5">
+				<td class="urutan">5</td>
+				<td class="namabestie">Aldi Maulana</td>
+				<td class="domisili">Cirebon</td>
+				<td class="aksihapus" id="buang__5">Hapus</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br>
+	<br>
+
+	<button id="hilangkan">Hilangkan Tabel</button>
+	<button id="tampilkan">Tampilkan Tabel</button>
+
+	</center>
+
+</body>
+
+<script type="text/javascript">
+	$('.namabestie').click(function(){
+		let isi = $(this).text();
+		alert(isi);
+	})
+
+	$('.aksihapus').click(function(){
+		let yakin = confirm('Apakah anda yakin ingin menghapusnya?');
+		if(!yakin) return;
+
+		let id = $(this).prop('id');
+     
+
+ 		let rid = id.split('__');
+    	let deret_ke = rid[1];
+
+		$('#deret__'+deret_ke).slideUp()
+	})
+
+	$("#hilangkan").click(function(){
+		$("table").hide();
+	})
+
+	$("#tampilkan").click(function(){
+		$("table").show();
+	})
+
+
+</script>
+
+
+</html>
