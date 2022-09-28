@@ -1,0 +1,36 @@
+body{
+	background-color: yellowgreen;
+}
+
+table{
+	font-family: cursive;
+	color: white;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	padding: 3px;
+	background-color: mediumvioletred;
+	border-color: seagreen;
+}
+
+h1{
+	color: white;
+	text-shadow: 2px 2px seagreen;
+}
+
+.aksihapus{cursor: pointer;}
+.aksihapus:hover{
+	transform: scale(1.2);
+	background-color: seagreen;
+}
+
+.namabestie{cursor: default;}
+
+button{
+	cursor: pointer;
+	background-color: seagreen;
+	color: white;
+	border-color: yellowgreen;
+}
+
+button:hover{transform: scale(1.2);}
