@@ -1,0 +1,71 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fadita's Personal Website</title>
+	<style type="text/css">
+		@import url(stylepadit.css);
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<h1 id="fadita">Fadita's Personal Website</h1>
+	<div id="menu">
+	<div id="topmenu">
+	<ul>
+		<li id="ketiga"><a href="#contact" class="aktif">Contact</a></li>
+		<li id="kedua"><a href="#aboutme" class="aktif">About Me</a></li>
+		<li id="kesatu"><a href="#home" class="aktif">Home</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div id="inikonten">
+	<div id="kontenkonten">
+		<div class="konten" id="home">
+		<center><h1>Halo, Selamat Datang!</h1></center>
+		</div>
+
+		<div class="konten" id="aboutme">
+		<p>Saya Fadita Ayu Azzahra, biasa dipanggil dengan sebutan Dita. Saya merupakan mahasiswi angkatan tahun 2021 dari Program Studi Komputerisasi Akuntansi.</p>
+		</div>
+
+		<div class="konten" id="contact">
+		<p>Hubungi saya melalui Instagram @fadita.azzahra.
+			<br>Mari berteman!</p>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	var currentSection=0;
+	$('#inikonten').hide();
+	$('ul li a').click(function(){
+		$('ul li a').removeClass('aktif');
+		$(this).addClass('aktif');
+
+		var href = $(this).attr('href');
+		$('#kontenkonten>div').hide();
+
+		$(href).show();
+
+		if(currentSection == 0){
+			$('#inikonten').slideToggle();
+			currentSection = href;
+		}else if(currentSection == href){
+			$('#inikonten').slideToggle();
+			currentSection = 0;
+		}else{
+			currentSection = href;
+		}
+		return false;
+	});
+});
+</script>
+
+</html>
