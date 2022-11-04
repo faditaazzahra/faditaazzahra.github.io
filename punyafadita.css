@@ -133,4 +133,18 @@ button:hover{
 	body{
 		box-sizing: border-box;
 	}
+
+	img{width: 100px;}
+
+	h1{font-size: 12px;}
+
+	.bagian1{font-size: 10px;}
+
+	.bagian2{padding: 15px;}
+
+	input, select{
+		padding: 5px 10px;
+		font-size: 10px;
+		margin: 5px 0 10px;
+	}
 }
