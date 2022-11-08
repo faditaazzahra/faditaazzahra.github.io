@@ -1,150 +1,171 @@
-/* Untuk KOP */
-
-body {margin: 0;}
-
-.wadahutama {
-	margin: 0 auto;
-	padding: 20px;
-	width: 793.70px;
-	border: solid 1px grey;
-}
-
-.wadahkedua {
-	align-items: center;
-	display: flex;
-	gap: 10px;
-}
-
-img {width: 80px;}
-
-.kepanjangan {
-	font-size: 10px;
-	font-family: verdana;
-	margin-top: 0px;
-}
-
-.singkatan {display: flex;}
-
-.stmik {
-	font-size: 50px;
-	font-family: verdana;
-	line-height: 40px;
-	font-weight: bold;
-	color: red;
-	letter-spacing: 10px;
-}
-
-.ikmi {margin-top: 0px;}
-
-.iniikmi {
-	font-size: 22px;
-	font-family: verdana;
-	line-height: 24px;
-	font-weight: bold;
-	color: blue;
-	letter-spacing: 7px;
-}
-
-.inicirebon {
-	font-size: 15px;
-	line-height: 20px;
-	font-family: verdana;
-	letter-spacing: 3px;
-   	font-weight: bold;
-    color: green;
-}
-
-.alamatkampus {
-    margin-top: 0px;
-    margin-left: 10px;
-    font-size: 14px;
-}
-
-.alamatkampus div {letter-spacing: 2px;}
-
-.alamatkampus a {color: blue;}
-
-.wadahketiga {
-    display: flex;
-   	width : 100%;
-}
-
-.sk {
-	padding: 2px 0px;
-    width: 55%;
-    text-align: center;
-    background-color: darkred;
-   	color: white;
-}
-
-.akreditasi {
-	padding: 2px 0px;
-   	width: 45%;
-   	text-align: center;
-    background-color: darkgreen;
-    color: white;
-}
-
-.surat {
-    font-size: 22px;
-    letter-spacing: 3px;
-    text-decoration: underline 2px;
-    font-weight: bold;
-}
-
-
-/* Untuk form */
-h1{font-size: 20px;}
-
-.bagian2 input[type="text"],
-	input[type="date"],
-	select, textarea
-	{
-		margin-top: 15px;
-		margin-bottom: 10px;
-		font-size: 15px;
-		width: 80%;
-		font-family: serif;
-		padding: 12px 10px;
-		border: 1px solid black;
-		border-radius: 7px;
-		display: flex;
+body{
+	background-color: #25182E;
 	}
 
-button{
-	box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
-	border-radius: 10px;
-	border-style: none;
-	background-color: #1d3557;
+header{
 	color: white;
+}
+
+@font-face{
+	font-family: 'curly';
+	src: url('Shorelines Script Bold.otf');
+}
+#namacurly{font-family: curly;}
+
+#menu{
+	width: 100%;
+	height: 55px;
+	margin: 5px auto;
+	}
+
+#topmenu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #CA1F3D;
+	}
+
+#topmenu li{
+	float: left;
+	}
+
+#topmenu li a{
+	padding: 14px 16px;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	}
+
+#topmenu .aktif:hover{
+	box-shadow: 1px 1px 4px white;
+	background-color: #FFBE00;
+	transform: scale(1.1);
+	}
+
+#fotopadit{width: 15%;}
+
+#fotodiri{
+	width: 15%;
+	
+
+}
+
+#buatkonten{padding: 50px;}
+
+.isi__0{
+	color: white;
+	font-size: 20px;
+}
+
+.isi__1{
+	color: white;
+	cursor: text;
+	margin: 0px 70px;
+	font-size: 18px;
+}
+
+.isi__2{
+	font-size: 18px;
+	margin: 0px 70px;
+}
+
+.isi__3{margin: 0px 70px;}
+
+.isi__4{
+	margin: 0px 70px;
+	color: white;
+	font-size: 18px;
+}
+
+.garisbawahi{
+	text-decoration: underline;
+	letter-spacing: 2px;
+	color: #FFBE00;
+}
+
+#nama:hover{
+	transform: scale(1.1);
+	color: #FFBE00;
+}
+
+.desain{width: 20%;}
+
+.bedadesain{width: 39%;}
+
+#buatlist{list-style: none;}
+
+#buatlist li a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
+
+#project a:hover{
+	background-color: #CA1F3D;
+	letter-spacing: 2px;
+}
+
+.inichibi{
+	width: 20%;
+	border: solid 2px white;
+
+}
+
+.fotosertifikat{width: 35%; border: solid 4px #CA1F3D;}
+
+#bedasertifikat{width: 30%; border: solid 4px #CA1F3D;}
+
+#bedasertifikat:hover{transform: scale(1.3);}
+
+.fotosertifikat:hover{transform: scale(1.3);}
+
+#untukkontak{
+	width: 50%;
+	border: solid 2px #CA1F3D;
+	padding: 20px 10px;
+	background-color: #CA1F3D;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+button{
+	background-color: #FFBE00;
+	border-color: #FFBE00;
+	font-family: sans-serif;
+	color: #25182E;
 	height: 40px;
-	font-family: serif;
+	border-radius: 5px;
+}
+
+button:hover{
+	transform: scale(1.2);
+	background-color: #25182E;
+	border-color: #25182E;
+	color: white;
 	cursor: pointer;
 }
 
-
-button:hover{
-	transform: scale(1.1);
-	background-color: #8d99ae;
+fieldset{
+	width: 50%;
+	background-color: #CA1F3D;
+	border-color: #CA1F3D;
+	border-radius: 5px;
 }
 
+#stay{list-style: none;}
 
-@media only screen and (max-width: 768px){
-	body{
-		box-sizing: border-box;
-	}
+#stay li{float: left;}
 
-	img{width: 100px;}
+#stay li a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+}
 
-	h1{font-size: 12px;}
-
-	.bagian1{font-size: 10px;}
-
-	.bagian2{padding: 15px;}
-
-	input, select{
-		padding: 5px 10px;
-		font-size: 10px;
-		margin: 5px 0 10px;
-	}
+#stay li a:hover{
+	text-decoration: underline;
+	background-color: #25182E;
+	color: white;
 }
